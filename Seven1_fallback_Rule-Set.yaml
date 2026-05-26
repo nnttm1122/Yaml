@@ -35,9 +35,6 @@ Anchor_CL: &Anchor_CL {type: http, interval: 86400, behavior: classical, format:
 # ※※※※※※※※※※※※※※※ 节点订阅 ※※※※※※※※※※※※※※※
 # 将 “订阅链接” 与 “机场名” 替换为所用机场信息； 订阅条数不够可新增，注意开头缩进，不同条数前方 “机场名” 不能重复； 末尾的 “机场名” 作用为每个节点添加机场名称前缀，可自定义。
 proxy-providers:
-  XFLTD: {<<: *Anchor_PR, url: 'http://8.212.7.131:777/api/v1/client/subscribe?token=b6f47701d4f8fba8e2ffa3cd7c5568ec', override: {additional-prefix: '[机场名] '}}
-  红杏: {<<: *Anchor_PR, url: 'https://106.55.228.246:36666/hxvip?token=81353491ece32273570296222d0976e0', override: {additional-prefix: '[机场名] '}}
-  优选: {<<: *Anchor_PR, url: 'https://dy.nihaonn.dpdns.org/73eb4cb5-a653-4044-92f6-a7e334c36aa9/sub', override: {additional-prefix: '[机场名] '}}
 
 # ※※※※※※※※※※※※※※※ 核心配置 ※※※※※※※※※※※※※※※
 # 基础配置
